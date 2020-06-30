@@ -1,5 +1,5 @@
-// Main.cpp
-// Sheng Fang, Rabiya Majeed, & Zulaikha Zakiullah
+// Source.cpp
+// Sheng Fang & Zulaikha Zakiullah
 // This program instantiates the window and calls the Game class to play it.
 
 #include <iostream>

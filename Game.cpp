@@ -1,11 +1,17 @@
 // Game.cpp
-// Sheng Fang, Rabiya Majeed, & Zulaikha Zakiullah
+// Sheng Fang & Zulaikha Zakiullah
 // This instantiates the Game class, which...runs our game.
 
-#include "Game.h"
+#include <iostream>
+#include <SDL.h>
 
-Game::Game() {
+class Game {
 
-}
 
-Game::~Game() {};
+public:
+
+	Game() {
+
+	}
+
+};
