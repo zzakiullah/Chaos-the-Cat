@@ -1,5 +1,5 @@
 // Game.cpp
-// Sheng Fang & Zulaikha Zakiullah
+// Sheng Fang, Rabiya Majeed, Zulaikha Zakiullah
 // This instantiates the Game class, which...runs our game.
 
 #include <iostream>
