@@ -2,7 +2,7 @@
 // Sheng Fang, Rabiya Majeed, & Zulaikha Zakiullah
 // This instantiates the gun class, the gun [|87.
 
-#include "gun.h"
+#include "Gun.h"
 
 Gun::Gun() {
 	Gun::ammo = 0;
