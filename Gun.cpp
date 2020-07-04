@@ -23,5 +23,5 @@ double Gun::get_recoil() { return Gun::recoil; }
 void Gun::set_ammo(int ammo) { Gun::ammo = ammo; }
 void Gun::set_durability(int durability) { Gun::durability = durability; }
 void Gun::set_shooting_speed(int shooting_speed) { Gun::shooting_speed = shooting_speed; }
-void Gun::set_accuracy(int accuracy) { Gun::accuracy = accuracy; }
-void Gun::set_recoil(int recoil) { Gun::recoil = recoil; }
+void Gun::set_accuracy(double accuracy) { Gun::accuracy = accuracy; }
+void Gun::set_recoil(double recoil) { Gun::recoil = recoil; }
