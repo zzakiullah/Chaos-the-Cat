@@ -29,7 +29,7 @@ public:
 
 	void set_ammo(int ammo);
 	void set_durability(int durability);
-	void set_shooting_speed(int shoothing_speed);
+	void set_shooting_speed(int shooting_speed);
 	void set_accuracy(double accuracy);
 	void set_recoil (double recoil);
 };
