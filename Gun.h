@@ -13,7 +13,6 @@ private:
 	int durability;
 	int shooting_speed;
 	double accuracy;
-	int durability;
 	double recoil;
 
 public:
@@ -24,7 +23,6 @@ public:
 	int get_durability();
 	int get_shooting_speed();
 	double get_accuracy();
-	int get_durability();
 	double get_recoil();
 
 
@@ -33,6 +31,5 @@ public:
 	void set_durability(int durability);
 	void set_shooting_speed(int shoothing_speed);
 	void set_accuracy(int accuracy);
-	void set_durability(int durability);
 	void set_recoil(int recoil);
 };
