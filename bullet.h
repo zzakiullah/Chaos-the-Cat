@@ -21,7 +21,7 @@ public:
 	int get_acceleration();
 	int get_damage();
 
-	void set_acceleration(int new_x);
-	void set_damage(int new_y);
+	void set_acceleration(int acceleration);
+	void set_damage(int damage);
 
 };
