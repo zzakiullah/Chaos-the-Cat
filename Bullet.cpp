@@ -2,7 +2,7 @@
 // Sheng Fang, Rabiya Majeed, & Zulaikha Zakiullah
 // This instantiates the bullet class, bullet is here :).
 
-#include "bullet.h"
+#include "Bullet.h"
 
 Bullet::Bullet() {
 	Bullet::acceleration = 0;
