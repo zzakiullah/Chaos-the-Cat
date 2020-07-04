@@ -29,10 +29,10 @@ public:
 
 
 
-	void set_ammo(int new_ammo);
-	void set_durability(int new_durability);
-	void set_shooting_speed(int new_shoothing_speed);
-	void set_accuracy(int new_accuracy);
-	void set_durability(int new_durability);
-	void set_recoil(int new_recoil);
+	void set_ammo(int ammo);
+	void set_durability(int durability);
+	void set_shooting_speed(int shoothing_speed);
+	void set_accuracy(int accuracy);
+	void set_durability(int durability);
+	void set_recoil(int recoil);
 };
