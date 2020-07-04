@@ -1,5 +1,5 @@
 #pragma once
-// Object.cpp
+// Gun.h
 // Sheng Fang, Rabiya Majeed, & Zulaikha Zakiullah
 // This instantiates the gun class, the gun [|87.
 
