@@ -1,5 +1,5 @@
 #pragma once
-// Object.cpp
+// Bullet.h
 // Sheng Fang, Rabiya Majeed, & Zulaikha Zakiullah
 // This instantiates the bullet class, bullet is here :).
 
