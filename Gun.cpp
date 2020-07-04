@@ -1,4 +1,4 @@
-// Object.cpp
+// Gun.cpp
 // Sheng Fang, Rabiya Majeed, & Zulaikha Zakiullah
 // This instantiates the gun class, the gun [|87.
 
