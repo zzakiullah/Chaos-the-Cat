@@ -7,6 +7,7 @@
 #include <SDL.h>
 #include "Object.h"
 #include <string>
+#include <sstream>	// std::string, std::stoi (converts string to int) 
 
 class Item : public Object{
 
@@ -21,7 +22,7 @@ private:
 public:
 
 	// Constructor and destructor
-	Item(std::string t);
+	Item(std::string st);
 	~Item();
 
 	// Getters
@@ -39,5 +40,8 @@ public:
 	void set_durability(double d);
 	void set_value(double v);
 	void set_price(double p);
+
+	// Splits up given string word by word and returns them in an array
+	std::string * splitStats(std::string st);
 
 };
