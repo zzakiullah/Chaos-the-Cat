@@ -41,7 +41,4 @@ public:
 	void set_value(double v);
 	void set_price(double p);
 
-	// Splits up given string word by word and returns them in an array
-	std::string * splitStats(std::string st);
-
 };
