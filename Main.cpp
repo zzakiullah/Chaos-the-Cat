@@ -21,7 +21,7 @@ int main(int argc, char** args);
 
 // Pointers to our window and surface 
 SDL_Surface* gWinSurface = NULL;	// The surface contained by the window
-SDL_Window* gWindow = NULL;			// The window we'll be rendering to
+SDL_Window* gWindow = NULL;		// The window we'll be rendering to
 SDL_Surface* gHelloWorld = NULL;	// the image we will load and show on screen
 
 // SDL initialization and window creation
@@ -138,32 +138,6 @@ int main(int argc, char** args) {
 			SDL_UpdateWindowSurface(gWindow);
 
 		}
-
-		/*// Fill the window with a white rectangle
-		SDL_FillRect(gWinSurface, NULL, SDL_MapRGB(gWinSurface->format, 255, 255, 255));
-
-		// Update the surface so it shows everything you draw to it
-		SDL_UpdateWindowSurface(gWindow);
-
-		// Wait 2 seconds
-		SDL_Delay(2000);*/
-		
-
-		/*// Load media
-		if (!loadMedia()) {
-			std::cout << "Failed to load media! " << std::endl;
-		}
-
-		else {
-			// Apply the image
-			SDL_BlitSurface(gHelloWorld, NULL, gWinSurface, NULL);
-
-			// Update the surface so it shows everything you draw to it
-			SDL_UpdateWindowSurface(gWindow);
-
-			// Wait 2 seconds
-			SDL_Delay(2000);
-		}*/
 		
 	}
 
