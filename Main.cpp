@@ -39,7 +39,7 @@ bool init() {
 
 		// Create window to render to
 		// Changed from: 1280, 720
-		gWindow = SDL_CreateWindow("Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 
+		gWindow = SDL_CreateWindow("CHAOS IN MAKING", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 
 									SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
 		// Make sure creating the window succeeded
