@@ -21,7 +21,7 @@ int main(int argc, char** args);
 
 // Pointers to our window and surface 
 SDL_Surface* gWinSurface = NULL;	// The surface contained by the window
-SDL_Window* gWindow = NULL;		// The window we'll be rendering to
+SDL_Window* gWindow = NULL;			// The window we'll be rendering to
 SDL_Surface* gHelloWorld = NULL;	// the image we will load and show on screen
 
 // SDL initialization and window creation
@@ -41,7 +41,7 @@ bool init() {
 		// Create window to render to
 		// Changed from: 1280, 720
 		gWindow = SDL_CreateWindow("Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 800, 600, SDL_WINDOW_SHOWN);
-		
+
 		// Make sure creating the window succeeded
 		if (gWindow == NULL) {
 			std::cout << "Error creating window: " << SDL_GetError() << std::endl;
@@ -78,7 +78,7 @@ bool loadMedia() {
 }
 
 void close() {
-	
+
 	// Deallocate surface
 	SDL_FreeSurface(gHelloWorld);
 	gHelloWorld = NULL;
@@ -96,9 +96,9 @@ void close() {
 
 }
 
-/* 
+/*
 Arguments of the main function must be an int and a char* array; return type must be int
-Any other type of main function will cause an undefined reference to main. 
+Any other type of main function will cause an undefined reference to main.
 SDL requires this type of main so it is compatible with multiple platforms.
 */
 
@@ -138,7 +138,6 @@ int main(int argc, char** args) {
 			SDL_UpdateWindowSurface(gWindow);
 
 		}
-		
 	}
 
 	// Free resources and close SDL
