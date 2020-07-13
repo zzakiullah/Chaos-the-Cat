@@ -28,7 +28,7 @@ public:
 	// Getters
 	std::string get_type();
 	int get_itemID();
-	int get_rarity();
+	double get_rarity();
 	double get_durability();
 	double get_value();
 	double get_price();
@@ -36,7 +36,7 @@ public:
 	// Setters
 	void set_type(std::string t);
 	void set_itemID(int id);
-	void set_rarity(int r);
+	void set_rarity(double r);
 	void set_durability(double d);
 	void set_value(double v);
 	void set_price(double p);
