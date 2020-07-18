@@ -4,22 +4,46 @@
 
 #include "Button.h"
 
-Button::Button() {
+Button::Button(int w, int h) {
+
+	width = w;
+	height = h;
+
 	position.x = 0;
 	position.y = 0;
 
-	currentSprite = BUTTON_SPRITE_MOUSE_OUT;
+	currentSprite = ButtonSprite::BUTTON_SPRITE_MOUSE_OUT;
 }
 
 Button::~Button() {}
+
+// Setters
 
 void Button::setPosition(int x, int y) {
 	position.x = x;
 	position.y = y;
 }
 
+void Button::setWidth(int w) {
+	width = w;
+}
+
+void Button::setHeight(int h) {
+	height = h;
+}
+
+// Getters 
+
 int Button::getPosition() {
 	return position.x, position.y; 
+}
+
+int Button::getWidth() {
+	return width;
+}
+
+int Button::getHeight() {
+	return height;
 }
 
 void Button::handleEvent(SDL_Event* e) {
@@ -36,13 +60,13 @@ void Button::handleEvent(SDL_Event* e) {
 
 		// Checks if the mouse is outside the button boundries
 		// Mouse is either left, right, above, or below button 
-		if (x < position.x || x > position.x + BUTTON_WIDTH || y < position.y || y > position.y + BUTTON_HEIGHT) {
+		if (x < position.x || x > position.x + width || y < position.y || y > position.y + height) {
 			inside = false;
 		}
 
 		// Mouse is outside the button
 		if (!inside) {
-			currentSprite = BUTTON_SPRITE_MOUSE_OUT;
+			currentSprite = ButtonSprite::BUTTON_SPRITE_MOUSE_OUT;
 		}
 
 		// If the mouse is inside the button, run through these cases
@@ -50,15 +74,15 @@ void Button::handleEvent(SDL_Event* e) {
 			// Set mouse over sprite
 			switch (e->type) {
 			case SDL_MOUSEMOTION:
-				currentSprite = BUTTON_SPRITE_MOUSE_OVER_MOTION;
+				currentSprite = ButtonSprite::BUTTON_SPRITE_MOUSE_OVER_MOTION;
 				break;
 
 			case SDL_MOUSEBUTTONDOWN:
-				currentSprite = BUTTON_SPRITE_MOUSE_DOWN;
+				currentSprite = ButtonSprite::BUTTON_SPRITE_MOUSE_DOWN;
 				break;
 
 			case SDL_MOUSEBUTTONUP:
-				currentSprite = BUTTON_SPRITE_MOUSE_UP;
+				currentSprite = ButtonSprite::BUTTON_SPRITE_MOUSE_UP;
 				break;
 			}
 		}
