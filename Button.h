@@ -23,7 +23,7 @@ private:
 
 public:
 
-	Button(int w, int h);
+	Button();
 	~Button();
 
 	// Handles mouse event
