@@ -12,9 +12,9 @@
 class Item : public Object{
 
 private:
-	int statNum;					// Number of total item stats.
+	int stat_num;					// Number of total item stats.
 	std::string type;				// Specifies what class of item it is.
-	int itemID;						// Identifies the item within its subcategory.
+	int id;							// Identifies the item within its subcategory.
 	double durability;				// The permanence of the item .
 	int rarity;						// Determines how often the item will spawn.
 	double value;					// Value of the item determines its price.
@@ -30,7 +30,7 @@ public:
 	// Getters
 
 	std::string get_type();
-	int get_itemID();
+	int get_id();
 	double get_rarity();
 	double get_durability();
 	double get_value();
@@ -39,7 +39,7 @@ public:
 	// Setters
 
 	void set_type(std::string t);
-	void set_itemID(int id);
+	void set_id(int new_id);
 	void set_rarity(double r);
 	void set_durability(double d);
 	void set_value(double v);
