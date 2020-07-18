@@ -7,25 +7,28 @@
 #include <SDL.h>
 #include "Object.h"
 #include <string>
-#include <sstream>	// std::string, std::stoi (converts string to int) 
+#include <sstream>					// For std::string, std::stoi (converts string to int).
 
 class Item : public Object{
 
 private:
-	std::string type;
-	int itemID;
-	double durability;
-	int rarity;
-	double value;
-	double price;
+	int statNum;					// Number of total item stats.
+	std::string type;				// Specifies what class of item it is.
+	int itemID;						// Identifies the item within its subcategory.
+	double durability;				// The permanence of the item .
+	int rarity;						// Determines how often the item will spawn.
+	double value;					// Value of the item determines its price.
+	double price;					// Selling price of the item.
 
 public:
 
-	// Constructor and destructor
+	/* Constructor will take in a string from a .txt file, parse it by words, and put into an array. Member variables
+	will be assigned from the array. */
 	Item(std::string st);
 	~Item();
 
 	// Getters
+
 	std::string get_type();
 	int get_itemID();
 	double get_rarity();
@@ -34,6 +37,7 @@ public:
 	double get_price();
 
 	// Setters
+
 	void set_type(std::string t);
 	void set_itemID(int id);
 	void set_rarity(double r);
