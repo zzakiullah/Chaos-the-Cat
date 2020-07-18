@@ -4,7 +4,7 @@
 
 #include "Button.h"
 
-Button::Button(int w, int h) {
+Button::Button() {
 	current_sprite = ButtonSprite::BUTTON_SPRITE_MOUSE_OUT;
 }
 
