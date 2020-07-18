@@ -5,8 +5,9 @@
 
 #include <iostream>
 #include <SDL.h>
+#include "Object.h"
 
-class Gun: public Object {
+class Gun : public Object {
 
 private:
 	int ammo;
@@ -31,5 +32,5 @@ public:
 	void set_durability(int durability);
 	void set_shooting_speed(int shooting_speed);
 	void set_accuracy(double accuracy);
-	void set_recoil (double recoil);
+	void set_recoil(double recoil);
 };

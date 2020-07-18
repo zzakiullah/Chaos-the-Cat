@@ -7,22 +7,21 @@
 
 // Function Declarations
 
-// Starts up SDL and creates window
-bool init();
-
-// Loads Media
-bool loadMedia();
-
-// Frees media and shuts down SDL
-void close();
-
-// Main function
-int main(int argc, char** args);
+bool init();						// Starts up SDL and creates window
+bool load_media();					// Loads Media
+void close();						// Frees media and shuts down SDL
+int main(int argc, char** args);	// Main function
 
 // Pointers to our window and surface 
+
 SDL_Surface* gWinSurface = NULL;	// The surface contained by the window
 SDL_Window* gWindow = NULL;			// The window we'll be rendering to
 SDL_Surface* gHelloWorld = NULL;	// the image we will load and show on screen
+
+//Screen attributes
+
+const int SCREEN_WIDTH = 800;
+const int SCREEN_HEIGHT = 600;
 
 // SDL initialization and window creation
 bool init() {
@@ -40,7 +39,8 @@ bool init() {
 
 		// Create window to render to
 		// Changed from: 1280, 720
-		gWindow = SDL_CreateWindow("Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 800, 600, SDL_WINDOW_SHOWN);
+		gWindow = SDL_CreateWindow("CHAOS IN MAKING", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 
+									SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
 		// Make sure creating the window succeeded
 		if (gWindow == NULL) {
@@ -62,7 +62,7 @@ bool init() {
 	return success;
 }
 
-bool loadMedia() {
+bool load_media() {
 
 	// Loading success flag
 	bool success = true;

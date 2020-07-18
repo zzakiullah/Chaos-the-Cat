@@ -5,9 +5,9 @@
 
 #include <iostream>
 #include <SDL.h>
+#include "Object.h"
 
-
-class Bullet : public Object{
+class Bullet : public Object {
 
 private:
 	int damage;
