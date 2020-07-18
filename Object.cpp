@@ -7,8 +7,10 @@
 Object::Object() {
 	position.x = 0;
 	position.y = 0;
+
 	width = 0;
 	height = 0;
+	weight = 0.0;
 }
 
 Object::~Object() {}
