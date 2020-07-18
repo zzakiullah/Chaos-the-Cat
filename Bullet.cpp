@@ -7,7 +7,6 @@
 Bullet::Bullet() {
 	acceleration = 0;
 	damage = 0;
-
 }
 
 Bullet::~Bullet() {}

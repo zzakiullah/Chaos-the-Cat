@@ -24,3 +24,4 @@ void Object::set_y(int new_y) { y = new_y; }
 void Object::set_width(int w) { width = w; }
 void Object::set_height(int h) { height = h; }
 void Object::set_weight(double w) { weight = w; }
+
