@@ -8,7 +8,7 @@
 // Function Declarations
 
 bool init();						// Starts up SDL and creates window
-bool loadMedia();					// Loads Media
+bool load_media();					// Loads Media
 void close();						// Frees media and shuts down SDL
 int main(int argc, char** args);	// Main function
 
@@ -62,7 +62,7 @@ bool init() {
 	return success;
 }
 
-bool loadMedia() {
+bool load_media() {
 
 	// Loading success flag
 	bool success = true;
