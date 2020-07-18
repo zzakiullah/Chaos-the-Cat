@@ -11,11 +11,6 @@ class Button : public Object{
 
 private:
 
-	int width;
-	int height;
-
-	SDL_Point position;							// Top left coordinate of the button.
-
 	enum class ButtonSprite {					// Defines the state of the button relative to the mouse.
 		BUTTON_SPRITE_MOUSE_OUT = 0,
 		BUTTON_SPRITE_MOUSE_OVER_MOTION = 1,
@@ -24,24 +19,14 @@ private:
 		BUTTON_SPRITE_TOTAL = 4
 	};
 
-	ButtonSprite currentSprite;					// Current sprite used. 
+	ButtonSprite current_sprite;				// Current sprite used. 
 
 public:
 
 	Button(int w, int h);
 	~Button();
 
-	// Sets the top left position of the button.
-	void setPosition(int x, int y);							
-	void setWidth(int w);
-	void setHeight(int h);
-	
-	// Gets the top left position of the button.
-	int getPosition();											
-	int getWidth();
-	int getHeight();
-
 	// Handles mouse event
-	void handleEvent(SDL_Event* e);
+	void handle_event(SDL_Event* e);
 
 };
